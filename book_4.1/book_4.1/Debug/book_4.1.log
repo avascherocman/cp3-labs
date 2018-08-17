@@ -1,3 +1,3 @@
 ﻿  book_4.1.cpp
-c:\users\interlinkadmin\documents\git\cp3-labs\book_4.1\book_4.1\book_4.1.cpp(17): warning C4305: 'initializing': truncation from 'unsigned long' to 'float'
+c:\users\interlinkadmin\documents\git\cp3-labs\book_4.1\book_4.1\book_4.1.cpp(23): warning C4305: '=': truncation from 'double' to 'float'
   book_4.1.vcxproj -> C:\Users\InterlinkAdmin\Documents\Git\cp3-labs\book_4.1\Debug\book_4.1.exe
