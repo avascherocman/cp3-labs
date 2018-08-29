@@ -1,2 +1,4 @@
 ﻿  book_5.1-9.cpp
+c:\users\interlinkadmin\documents\git\cp3-labs\book_5.1-9\book_5.1-9\book_5.1-9\book_5.1-9.cpp(42): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\interlinkadmin\documents\git\cp3-labs\book_5.1-9\book_5.1-9\book_5.1-9\book_5.1-9.cpp(55): warning C4305: 'initializing': truncation from 'double' to 'float'
   book_5.1-9.vcxproj -> C:\Users\InterlinkAdmin\Documents\Git\cp3-labs\book_5.1-9\book_5.1-9\Debug\book_5.1-9.exe
