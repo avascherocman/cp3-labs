@@ -1,0 +1,4 @@
+﻿  zellers.cpp
+c:\users\interlinkadmin\documents\git\cp3-labs\zellers\zellers\zellers\zellers.cpp(34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\interlinkadmin\documents\git\cp3-labs\zellers\zellers\zellers\zellers.cpp(40): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  zellers.vcxproj -> C:\Users\InterlinkAdmin\Documents\Git\cp3-labs\zellers\zellers\Debug\zellers.exe
