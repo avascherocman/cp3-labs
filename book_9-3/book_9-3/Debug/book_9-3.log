@@ -1,2 +1,3 @@
 ﻿  book_9-3.cpp
+c:\users\interlinkadmin\documents\git\cp3-labs\book_9-3\book_9-3\book_9-3.cpp(20): warning C4101: 'menuChoice': unreferenced local variable
   book_9-3.vcxproj -> C:\Users\InterlinkAdmin\Documents\Git\cp3-labs\book_9-3\Debug\book_9-3.exe
