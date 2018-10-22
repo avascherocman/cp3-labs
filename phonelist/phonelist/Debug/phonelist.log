@@ -1,3 +1,3 @@
 ﻿  phonelist.cpp
-c:\users\interlinkadmin\documents\git\cp3-labs\phonelist\phonelist\phonelist.cpp(110): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\interlinkadmin\documents\git\cp3-labs\phonelist\phonelist\phonelist.cpp(114): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   phonelist.vcxproj -> C:\Users\InterlinkAdmin\Documents\Git\cp3-labs\phonelist\Debug\phonelist.exe
