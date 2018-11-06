@@ -1,0 +1,61 @@
+Dice Homework:
+save as .h (header file)
+#ifndef die_h
+#define die_h
+Public and Private - similar to passing by ref and by val
+Start with compiler directives (RandGen), constants, and functions
+Die has #include randgen.h, circle on pg 235 does not
+Class is split into two things: definition and implementation
+Definition: class className {
+};
+Definition split into public -functions and private -data
+Constructors: default, fill, copy
+Ability to make instance of the object
+
+Rules:
+Limit your private data
+Have at least default and fill constructors
+every has to have a toString method
+Any member function can call any other member function
+
+Definition:
+
+-----public-----
+//constructor
+di();
+di(int ns);
+*di(const di d);
+
+//member function
+void setNumSides(int ns);
+int getNumSides();
+std::string toString();
+int roll();
+
+-----private-----
+int mySides;
+
+Test every constructor
+3 circles - default, fill, copy
+Default with set is same as fill
+
+-----main for circle-----
+#include "circle.h"
+#include <iostream>
+int main (){
+	circle c1();
+	circle c2(3);					
+	circle c3(c1)
+	c1.setRadius(1.5)
+	std::cout<<c1.toString()<<"\n";
+	std::cout<<c2.toString()<<"\n";                        //outputs 1.50, 9.42, 7.065 -
+    	std::cout<<c3.toString()<<"\n";                       // radius, circumference, area
+
+
+}
+
+part of the class: toString
+std::string circle::toStr(){
+	std::string strcir;
+	strcir = "Area "+ Area().toString
+}

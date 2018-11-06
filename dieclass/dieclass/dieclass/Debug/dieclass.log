@@ -1,0 +1,11 @@
+﻿  dieclass.cpp
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(12): error C2059: syntax error: '*'
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(12): error C2238: unexpected token(s) preceding ';'
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(34): error C2511: 'die::die(die &)': overloaded member function not found in 'die'
+  c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(7): note: see declaration of 'die'
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(35): error C2597: illegal reference to non-static member 'die::mySides'
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(40): error C2228: left of '.toString' must have class/struct/union
+  c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(40): note: type is 'int'
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(44): error C2065: 'mySides': undeclared identifier
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(48): error C2065: 'mySides': undeclared identifier
+c:\users\interlinkadmin\documents\git\cp3-labs\dieclass\dieclass\dieclass\die.h(52): error C2065: 'mySides': undeclared identifier
