@@ -9,13 +9,15 @@ public:
   //constructors
   die(); //default
   die(int sides); //fill
-  *die(die d);  //copy
+  die(const die &d2);  //copy
 
   //functions
-  void setNumSides();
+  void setNumSides(int ns);
   int getNumSides();
   std::string toStr();
   int roll();
+
+  RandGen r;
 
 private:
   //data
@@ -27,28 +29,30 @@ die::die() {
   mySides = 6;          //default
 }
 
-die::die(int sides) {
-  mySides = sides;                //fill
+die::die(int sides){
+  mySides = sides;          //fill
 }
 
-die::die(die d) {
-  setNumSides(mySides);       //copy
+die::die(const die &d2) {
+  mySides = d2.mySides;    //copy
 }
 
 std::string die::toStr() {
   std::string strdie;
-  strdie = "Roll " + roll(d).toString;
+  
+
+  
 }
 
-void setNumSides(int ns) {
+void die::setNumSides(int ns) {
   die::mySides = ns;
 }
 
-int getNumSides() {
-  die::return mySides;
+int die::getNumSides() {
+  return mySides;
 }
 
-int roll(die d) {
-  int newRoll =  RandGen::RandInt(1, die::mySides);
+int die::roll() {
+  int newRoll =  r.RandInt(1, mySides);
   return newRoll;
 }
