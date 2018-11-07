@@ -3,6 +3,7 @@
 #define die_h
 #endif
 #include "randgen.h"
+#include <string>
 
 class die {
 public:
@@ -14,8 +15,7 @@ public:
   //functions
   void setNumSides(int ns);
   int getNumSides();
-  std::string toStr();
-  int roll();
+  std::string roll();
 
   RandGen r;
 
@@ -37,12 +37,6 @@ die::die(const die &d2) {
   mySides = d2.mySides;    //copy
 }
 
-std::string die::toStr() {
-  std::string strdie;
-  
-
-  
-}
 
 void die::setNumSides(int ns) {
   die::mySides = ns;
@@ -52,7 +46,8 @@ int die::getNumSides() {
   return mySides;
 }
 
-int die::roll() {
+std::string die::roll() {
   int newRoll =  r.RandInt(1, mySides);
-  return newRoll;
+  std::string rs = "Roll: " + newRoll.std::to_string();
+
 }
