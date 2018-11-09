@@ -16,7 +16,9 @@ public:
   int getValue();
   void setSuit(int s);
   int getSuit();
-  std::string toStr(int r);
+  std::string toStr(card c);
+  std::string printCard(card c);
+ 
 
 
 private:
@@ -26,24 +28,39 @@ private:
 
 };
 
-std::string card::card() {             //random fill
+std::string card::card() {           //random fill
   RandGen r;
   std::string rs = std::to_string(r.RandInt(1, mySides));
   return rs;
 }
 
-card::card(int s, int v) {
-  mySides = sides;                //fill
+card::card(int v, int s) {
+  value = v;
+  suit = s;                      //fill
 }
 
-void card::setNumSides(int ns) {
-  card::mySides = ns;
+void card::setValue(int v) {
+  value = v;
 }
 
-int card::getNumSides() {
-  return mySides;
+void card::setSuit(int s) {
+  sides = s;
 }
 
+int card::getValue() {
+  return v;
+}
+
+void card::getSuit() {
+  return s;
+}
+
+std::string card::printCard(card c){
+  std::string s;
+                              // use ascii 3, 4, 5, 6 in visual studio to be able to output suits
+  
+  return s;  
+}
 
 
 #endif
