@@ -8,30 +8,30 @@ class card {
 public:
   //constructors
   card(); //default
-  card(int sides); //fill
+  card(int v, int s); //fill
   card(const card &d2);  //copy
 
   //functions
   void setValue(int v);
   int getValue();
   void setSuit(int s);
-  int getSuit();
-  std::string toStr(card c);
-  std::string printCard(card c);
+  char getSuit();
+  std::string printCard();
  
 
 
 private:
   //data
   int value; //1 to 12
-  int suit; //3 to 6 - hearts, diamonds, clubs, spades
+  char suit; //3 to 6 - hearts, diamonds, clubs, spades
 
 };
 
-std::string card::card() {           //random fill
+card::card() {           //random fill
   RandGen r;
-  std::string rs = std::to_string(r.RandInt(1, mySides));
-  return rs;
+  suit = r.RandInt(3, 6);
+  value = r.RandInt(1, 12);
+
 }
 
 card::card(int v, int s) {
@@ -44,21 +44,22 @@ void card::setValue(int v) {
 }
 
 void card::setSuit(int s) {
-  sides = s;
+  suit = s;
 }
 
 int card::getValue() {
-  return v;
+  return value;
 }
 
-void card::getSuit() {
-  return s;
+char card::getSuit() {
+  return suit;
 }
 
-std::string card::printCard(card c){
+std::string card::printCard(){
   std::string s;
-                              // use ascii 3, 4, 5, 6 in visual studio to be able to output suits
-  
+  s = " _____ \n|" + std::to_string(value) + "   " + std::to_string(value) + "|\n|  " + suit + "  |\n|  " + suit + "  |\n|" + 
+    std::to_string(value) + "___" + std::to_string(value) + "|\n";
+    // use ascii 3, 4, 5, 6 in visual studio to be able to output suits
   return s;  
 }
 
