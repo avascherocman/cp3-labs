@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  cardclass2.cpp
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(37): error C2144: syntax error: 'int' should be preceded by ')'
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(37): error C2144: syntax error: 'int' should be preceded by ';'
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(37): error C2059: syntax error: ')'
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(38): error C2275: 'RandGen': illegal use of this type as an expression
+  c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\randgen.h(55): note: see declaration of 'RandGen'
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(38): error C2146: syntax error: missing ')' before identifier 'r'
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(41): error C2065: 'r': undeclared identifier
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(41): error C2228: left of '.RandInt' must have class/struct/union
+  c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(41): note: type is 'unknown-type'
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(42): error C2065: 'r': undeclared identifier
+c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(42): error C2228: left of '.RandInt' must have class/struct/union
+  c:\users\interlinkadmin\documents\git\cp3-labs\cardclass\cardclass2\cardclass2\cardclass2\deck.h(42): note: type is 'unknown-type'

@@ -9,21 +9,22 @@ public:
   //constructors
   card(); //default
   card(int v, int s); //fill
-  card(const card &d2);  //copy
 
   //functions
   void setValue(int v);
   int getValue();
   void setSuit(int s);
   char getSuit();
-  std::string printCard();
+  std::string printCard(card &c);
+  std::string toStrL();
+  std::string toStr();
  
 
 
 private:
   //data
   int value; //1 to 12
-  char suit; //3 to 6 - hearts, diamonds, clubs, spades
+  int suit; //3 to 6 - hearts, diamonds, clubs, spades
 
 };
 
@@ -55,13 +56,49 @@ char card::getSuit() {
   return suit;
 }
 
-std::string card::printCard(){
+std::string card::printCard(card & c){
   std::string s;
-  s = " _____ \n|" + std::to_string(value) + "   " + std::to_string(value) + "|\n|  " + suit + "  |\n|  " + suit + "  |\n|" + 
+  s = " _____ \n|" + std::to_string(value) + "   " + std::to_string(value) + "|\n|  " + c.toStrL() + "  |\n|  " +c.toStrL()  + "  |\n|" +
     std::to_string(value) + "___" + std::to_string(value) + "|\n";
-    // use ascii 3, 4, 5, 6 in visual studio to be able to output suits
   return s;  
 }
 
+std::string card::toStrL() {
+  std::string s;
+  switch (suit) {
+    case 3:
+    s = "H";
+    break;
+  case 4:
+    s = "D";
+    break;
+  case 5:
+    s = "C";
+    break;
+  case 6:
+    s = "S";
+    break;
+  }
+  return s;
+}
+
+std::string card::toStr() {
+  std::string s = std::to_string(value);
+  switch (suit) {
+  case 3:
+    s += "H";
+    break;
+  case 4:
+    s += "D";
+    break;
+  case 5:
+    s += "C";
+    break;
+  case 6:
+    s += "S";
+    break;
+  }
+  return s;
+}
 
 #endif
