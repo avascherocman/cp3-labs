@@ -11,7 +11,7 @@ public:
   deck(); //default - fill 52 cards
   deck(int n); //fill - fill that number of cards randomly
           
-  void shuffle();
+  void shuffle(int n);
   void printW(int n);
   void printP(int n);
 
@@ -48,8 +48,18 @@ deck::deck(int n) {    //random fill that number of cards
 }
 
 
-void deck::shuffle() {
-  
+void deck::shuffle(int n) {
+  int i = 0;
+  card temp;
+  RandGen r;
+  int rand;
+  while (i < n) {
+    rand = r.RandInt(1, n);
+    temp = d[i];
+    d[i] = d[rand];
+    d[rand] = temp;
+    i++;
+  }
 }
 
 void deck::printW(int n) {

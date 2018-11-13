@@ -10,8 +10,9 @@
 int main()
 {
   deck d;
+  d.shuffle(52);
   d.printW(52);
-  d.printP(52);
+  
   
   system("Pause");
 
